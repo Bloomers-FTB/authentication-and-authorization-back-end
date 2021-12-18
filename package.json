@@ -4,7 +4,10 @@
   "description": "We are going to build the back end of a sign-up / log-in page",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon index.js"
+    "server": "nodemon index.js",
+    "latest": "knex migrate:latest",
+    "rollback": "knex migrate:rollback",
+    "seed": "knex seed:run"
   },
   "repository": {
     "type": "git",
